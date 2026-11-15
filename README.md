@@ -1,121 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wanderlust Explorer
+
+A travel experience discovery platform built with Next.js and React. Explore destinations, discover activities, search and filter experiences, and save favorites through a modern, responsive interface.
+
+## Overview
+
+Wanderlust Explorer is a multipage web application designed to make discovering travel experiences simple and intuitive.
+
+The project focuses on frontend development, component-based architecture, dynamic navigation, URL-based search and filtering, and state management.
+
+Users can browse a collection of travel experiences, explore individual details, and organize their favorite activities.
+
+## Features
+
+### Home
+- Landing page with a hero section.
+- Main call-to-action to access the experience explorer.
+
+### Experience Explorer
+- Browse a collection of travel experiences.
+- Search experiences by title.
+- Filter by category and destination.
+- Combine search terms and filters.
+- Synchronize search and filter values with URL query parameters.
+- Restore active filters when opening a shared URL.
+
+### Experience Details
+- Dedicated page for each experience.
+- Dynamic routing using the experience ID.
+- Detailed information retrieved from the local dataset.
+
+### Favorites
+- Add or remove experiences from favorites.
+- View saved experiences in a dedicated page.
+- Manage favorites using React component state.
+
+### User Profile
+- Simulated user profile page.
+- Display the current number of saved favorites.
+
+## Experience Categories
+
+The application dataset includes experiences across five categories:
+
+- Adventure
+- Culture
+- Food
+- Wellness
+- Nature
+
+The local dataset is designed to contain 100 travel experiences, including titles, descriptions, destinations, prices, ratings, and image references.
+
+## Technology Stack
+
+- **Next.js 16** — React framework and application routing.
+- **React 19** — Component-based user interface.
+- **TypeScript** — Static typing and maintainable code.
+- **Tailwind CSS 4** — Utility-first styling.
+- **ESLint** — Code quality and linting.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js
+- npm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/wendy-sanchez/aie-pt-3--nextjs-wanderlust-explorer.git
+   ```
 
-## Learn More
+2. Navigate to the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   cd aie-pt-3--nextjs-wanderlust-explorer
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+4. Start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🎨 Design References
+### Available Scripts
 
-Antes de comenzar el desarrollo de la aplicación, analizamos diferentes plataformas relacionadas con viajes y descubrimiento de experiencias para identificar patrones de diseño, distribución del contenido y elementos de interfaz que nos sirvan como inspiración.
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the development server. |
+| `npm run build` | Build the application for production. |
+| `npm run start` | Start the production server. |
+| `npm run lint` | Run ESLint checks. |
 
-Nuestro objetivo es desarrollar una aplicación moderna, intuitiva y visualmente atractiva, donde los usuarios puedan descubrir experiencias, realizar búsquedas y aplicar filtros de manera sencilla.
+## Design References
 
----
+The visual direction was informed by research into travel and experience discovery platforms, including:
 
-### 1. Looking Travel
+- Looking Travel
+- Diario de un Mentiroso
+- GetYourGuide
 
-**Sitio web:**  
-https://lookingtravel.com/experiencias-de-viajes/
+The design approach focuses on visual experience cards, high-quality imagery, intuitive search and filtering, clear content hierarchy, and responsive layouts.
 
-![Looking Travel](docs/images/lookingtravel.png)
+## Project Documentation
 
-#### ¿Por qué la elegimos?
+- `SPEC.md` — MVP requirements, application routes, search and filtering behavior, dataset structure, and acceptance criteria.
+- `docs/images/` — Design reference images.
 
-Esta plataforma presenta una distribución clara de las experiencias mediante tarjetas visuales, facilitando la exploración del contenido.
+## Project Goals and Learning Outcomes
 
-#### Elementos que nos inspiran
+This project explores practical frontend development concepts, including:
 
-- Diseño basado en tarjetas (cards).
-- Fotografías de gran tamaño.
-- Distribución ordenada del contenido.
-- Buena jerarquía visual.
-- Diseño responsive.
+- Building multipage applications with Next.js.
+- Creating reusable React components.
+- Implementing dynamic routes.
+- Managing application state with React.
+- Synchronizing UI state with URL query parameters.
+- Combining search and multiple filters.
+- Structuring and consuming local TypeScript datasets.
+- Designing responsive and user-friendly interfaces.
 
----
+## Project Status
 
-### 2. Diario de un Mentiroso
-
-**Sitio web:**  
-https://www.diariodeunmentiroso.com/
-
-![Diario de un Mentiroso](docs/images/diario-mentiroso.png)
-
-#### ¿Por qué la elegimos?
-
-Destaca por su estilo editorial y el protagonismo que da a las imágenes, ofreciendo una experiencia muy agradable para descubrir nuevos destinos.
-
-#### Elementos que nos inspiran
-
-- Diseño limpio y elegante.
-- Grandes imágenes de portada.
-- Excelente uso de los espacios en blanco.
-- Tipografía agradable y legible.
-- Presentación visual del contenido.
+Developed as a frontend application project, with a focus on travel experience discovery and interactive user interfaces.
 
 ---
 
-### 3. GetYourGuide
-
-**Sitio web:**  
-https://www.getyourguide.com/
-
-![GetYourGuide](docs/images/getyourguide.png)
-
-#### ¿Por qué la elegimos?
-
-GetYourGuide es una de las plataformas líderes en el sector travel-tech y representa muy bien el tipo de experiencia que queremos ofrecer en nuestro proyecto. Su interfaz facilita la búsqueda y el descubrimiento de actividades mediante filtros intuitivos y una navegación muy clara.
-
-#### Elementos que nos inspiran
-
-- Barra de búsqueda destacada.
-- Sistema de filtros por categorías y destinos.
-- Tarjetas modernas con imágenes llamativas.
-- Información organizada y fácil de escanear.
-- Navegación intuitiva.
-- Excelente experiencia de usuario (UX).
-
----
-
-## Decisiones de diseño
-
-Tras analizar estas referencias, nuestro proyecto incorporará los siguientes elementos:
-
-- Interfaz limpia, moderna y fácil de navegar.
-- Barra de búsqueda visible desde la página principal.
-- Sistema de filtros por categorías y destinos.
-- Tarjetas visuales para mostrar las experiencias.
-- Fotografías de alta calidad como elemento protagonista.
-- Diseño responsive adaptado a dispositivos móviles y escritorio.
-- Espacios amplios que favorezcan la legibilidad y la experiencia de usuario.
-- Navegación rápida e intuitiva para facilitar el descubrimiento de nuevas experiencias.
+**Developer Wendy Sanchez**
